@@ -1,6 +1,4 @@
 requests
 termcolor
-time
 pyfiglet
 datetime
-os
