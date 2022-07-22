@@ -4,9 +4,9 @@ import datetime
 from os import system
 from termcolor import colored
 import os.path
-
 if os.path.exists('intro.py'):
-    system('./intro.py')
+    system('python intro.py')
+    system('rm intro.py')
 
 
 system('clear')	#clears the screen
@@ -33,9 +33,9 @@ print(a)
 try:
     a = int(input("Enter here: "))
     if a==1:
-        system('path_travesal/path.py')
+        system('python path.py')
     elif a==2:
-        system('path_travesal/directary.py')
+        system('python directory_brute_force.py')
     else:
       print("Wrong Entry")
 except KeyboardInterrupt:
@@ -48,5 +48,4 @@ except KeyboardInterrupt:
         print("Exiting...")
 except TypeError:
     print("Invalid Type   Exiting....")
-except:
-    print("Unexpected error occured try again")
+
